@@ -47,8 +47,8 @@ $(document).ready(function() {
         nav: true,
         dots: false,
         navText: [
-            "<div class='tombol'><</div>",
-            "<div class='tombol'>></div>"
+            "<div class='tombol'><img src='Icon/chevron-left.svg'></div>",
+            "<div class='tombol'><img src='Icon/chevron-right.svg'></div>"
         ],
         responsive: {
         0: {

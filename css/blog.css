@@ -67,7 +67,7 @@ button {cursor: pointer;}
     font-size: 1.5rem;
 }
 
-#navbar .menu button {
+#navbar .comunity button {
     background-color: var(--secondary-color-);
 
 }
@@ -137,8 +137,9 @@ button {cursor: pointer;}
 
 /* latest article */
 .latest-article {
-    background-color: salmon;
+    background-color: var(--secondary-color-);
     padding: 4rem 0;
+    color: white;
 }
 .latest-article .judul {
     margin-bottom: 3rem;
@@ -163,11 +164,13 @@ button {cursor: pointer;}
     height: 6rem;
     margin-left: .7rem;
 }
+.latest-article a {
+    color: white;
+}
 
 /* highlight video */
 .highlight-video {
     padding: 5rem 0;
-    background-color: beige;
 }
 .highlight-video .video-tiktok-box {
     width: 100%;

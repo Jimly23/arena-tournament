@@ -195,11 +195,17 @@ header .cta {
 
 header .populer-item {
     padding: 5px 10px;
-    border: 1px solid lightgreen;
+    border: 1px solid var(--secondary-color-);
     border-radius: 1.3rem;
     display: flex;
     align-items: center;
     margin-left: .5rem;
+}
+
+header .populer-item:hover {
+    background-color: #fff;
+    color: var(--secondary-color-);
+    border: 1px solid #fff;
 }
 
 /* header */
@@ -225,6 +231,7 @@ header .populer-item {
     display: flex;
     align-items: center;
     background-color: var(--secondary-color-);
+    color: white;
 }
 
 .populer-tournament .populer-item {
@@ -244,10 +251,6 @@ header .populer-item {
     top: 50%;
     right: -30px;
     transform: translateY(-50%);
-    /* background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%; */
     cursor: pointer;
     z-index: 1000;
 }
@@ -257,31 +260,32 @@ header .populer-item {
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
-    /* background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 50%; */
     cursor: pointer;
     z-index: 1000;
 }
 
 .populer-tournament .tombol {
-    background-color: aqua;
-    /* width: 30px;
-    height: 30px; */
+    background-color: #eaeaea;
+    font-size: 25px;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 0 10px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
+    opacity: .8;
+}
+
+.populer-tournament .tombol img {
+    width: 2rem;
+    height: 2rem;
 }
 /* populer tournament */
 
 /* tournament */
-.tournament{
-    margin-top: -50px;
+.tournament .title-box{
+    color: var(--secondary-color-);
 }
 
 .tournament .tournament-box {
@@ -368,6 +372,11 @@ header .populer-item {
     padding: .2rem;
 }
 /* news */
+
+/* guide */
+.guide .title-box {
+    color: var(--secondary-color-);
+}
 
 /* footer */
 footer {
