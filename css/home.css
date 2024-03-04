@@ -1,0 +1,403 @@
+/* global */
+html {
+    overflow-x: hidden;
+}
+
+h6,h5,h4,h3,h2,h1 {padding: 0;margin: 0;}
+* {font-size: 14px;}
+.button {padding: 3px 15px; border: none; outline: none; border-radius: .2rem;}
+button {cursor: pointer;}
+
+/* global */
+
+/* navbar */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    box-shadow: 5px 0 .2rem #cfcfcf;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+#navbar .nav {
+    position: relative;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+#navbar .menu {
+    display: none;
+}
+
+#navbar .box-search {
+    width: 50%;
+    position: relative;
+
+}
+
+#navbar input {
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 1rem;
+}
+
+#navbar .box-search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+#navbar button, input {
+    border: none;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+#navbar .menu i {
+    font-size: 1.5rem;
+}
+
+#navbar .menu button {
+    background-color: #fff;;
+}
+/* navbar */
+
+/* sidebar nav */
+
+#sidebar-nav {
+    margin-top: 3.7rem;
+    height: 30vh;
+    width: 400px;
+    background-color: #333;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: -400px;
+    z-index: 99;
+    transition: all .3s ease;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+#sidebar-nav a {
+    color: #fff;
+}
+.sidebar-open {
+    margin-right: 420px;
+}
+
+/* sidebar nav */
+
+/* header */
+header {
+    position: relative;
+}
+
+header .cta a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    width: 100%;
+    margin-top: 45px;
+}
+
+header .owl-item {
+    height: 100%;
+    height: 40rem
+}
+
+.hero .game-item {
+    height: 100%;
+}
+
+.hero img {
+    height: 100%;
+    object-fit: cover;
+    /* transform: translate(0, 20%); */
+}
+
+.hero .slider {
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+}
+
+/* .owl-nav .owl-next{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    opacity: 1;
+    font-size: 50px !important;
+    z-index: 1;
+    display: none;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    top: -3px;
+    opacity: 1;
+    font-size: 50px;
+    z-index: 1;
+    display: none;
+} */
+
+header .box-populer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .box-populer h6 {
+    margin: 0;
+    padding: 0;
+}
+
+header .cta {
+    z-index: 9999;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+header .populer-item {
+    padding: 5px 10px;
+    border: 1px solid lightgreen;
+    border-radius: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+}
+
+/* header */
+
+/* support */
+
+.support .box-support {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.support img {
+    width: 8rem;
+    filter: contrast(0);
+    opacity: 50%;
+}
+/* support */
+
+/* populer tournament */
+.populer-tournament {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    background-color: #cfcfcf;
+}
+
+.populer-tournament .populer-item {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.populer-tournament img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+/* Gaya tombol next */
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    /* background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%; */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    /* background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%; */
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.populer-tournament .tombol {
+    background-color: aqua;
+    /* width: 30px;
+    height: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 50%;
+}
+/* populer tournament */
+
+/* tournament */
+.tournament{
+    margin-top: -50px;
+}
+
+.tournament .tournament-box {
+    padding: 5rem 0;
+}
+
+.tournament .tournament-box h6 {
+    padding: 5px 0;
+}
+
+.tournament .tournament-img {
+    width: 10rem;
+    height: 10rem;
+    background-color: #cfcfcf;
+}
+
+.tournament img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.tournament .tournament-body {
+    padding: .2rem;
+}
+/* tournament */
+
+/* latest tournament */
+.latest-tournament {
+    background-color: antiquewhite;
+    padding-bottom: 3rem;
+}
+
+.latest-tournament .left, .right {
+    /* border: 1px solid black; */
+    padding: 1rem;
+}
+
+.latest-tournament .latest-tournament-box {
+    padding: 5rem 0;
+}
+
+.latest-tournament .latest-tournament-item{
+    border-bottom: 1px solid red;
+    margin: 1rem 0;
+}
+
+.latest-tournament .date {
+    margin-right: 1rem;
+    font-weight: 600;
+}
+/* latest tournament */
+
+/* news */
+.news, .guide {
+    margin-top: -50px;
+}
+
+.news .news-box, .guide .guide-box {
+    padding: 5rem 0;
+}
+
+.news .news-card, .guide .guide-card {
+    width: 100%;
+}
+
+.news .news-img, .guide .guide-img {
+    width: 100%;
+    height: 14rem;
+    background-color: #cfcfcf;
+}
+
+.news img, .guide img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.news .news-body, .guide .guide-body {
+    padding: .2rem;
+}
+/* news */
+
+/* footer */
+footer {
+    background-color: blanchedalmond;
+    padding: 10rem 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .about-title, .quick-link-title {
+    margin-bottom: 2rem;
+}
+
+footer .about-title::after, .quick-link-title::after, .scedule-title::after, .newsletter-title::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: .2rem;
+    background-color: salmon;
+}
+
+footer .about-body,.scedule-body,.newsletter-body {
+    margin: 1.5rem 0;
+}
+
+footer .link {
+    border: .1rem solid #fff;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    margin-right: .5rem;
+}
+
+footer .social-link i {
+    font-size: 1.5rem;
+    filter: contrast(0);
+}
+
+footer .newsletter-box {
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+footer input {
+    padding: .5rem;
+    width: 100%;
+}
+/* footer */

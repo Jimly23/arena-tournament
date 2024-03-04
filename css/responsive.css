@@ -1,0 +1,133 @@
+/* mobile */
+@media screen and (max-width:425px) {
+    .trend {
+        display: none;
+    }
+
+    header .box-populer h6 {
+        font-size: 8px;
+    }
+    .support .box-support {
+        justify-content: center;
+    }
+    .support img {
+        width: 1rem;
+    }
+
+}
+
+/* tablet */
+@media screen and (max-width:768px) {
+    .box-search {
+        display: none;
+    }
+    .trend {
+        position: absolute;
+        right: 50px;
+    }
+
+    header .cta {
+        top: 60%;
+    }
+
+    header .text-populer {
+        display: none;
+    }
+
+    header .populer-item {
+        margin-bottom: .5rem;
+    }
+
+    header h3{
+        font-size: 16px;
+    }
+
+    .tournament .tournament-box h6 {
+        font-size: 12px;
+    }
+
+    .support img {
+        width: 7rem;
+    }
+
+    .news-trending .trending h6 {
+        font-size: .7rem;
+    }
+
+    .news-trending .title h2 {
+        font-size: 1rem;
+    }
+
+    .news-trending .trending-right .title {
+        bottom: 5px;
+    }
+
+}
+
+
+/* laptop */
+@media screen and (max-width:1024px) {
+    #navbar .menu {
+        display: block;
+    }
+    .comunity,.home,.news-link {
+        display: none;
+    }
+}
+
+/* 4k */
+@media screen and (max-width:1440px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width:2500px) and (min-width:1440px) {
+
+}
+
+
+@media screen and (max-width:1440px) and (min-width:1024px) {
+    .menu {
+        display: block;
+    }
+    .sign,.license {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .sign {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:768px) and (min-width:340px) {
+    .sign {
+        display: none;
+    }
+} */
