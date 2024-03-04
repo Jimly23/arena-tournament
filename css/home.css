@@ -1,11 +1,12 @@
 /* global */
-html {
+:root {
     overflow-x: hidden;
+    --secondary-color-: rgb(37, 150, 190);
 }
 
 h6,h5,h4,h3,h2,h1 {padding: 0;margin: 0;}
 * {font-size: 14px;}
-.button {padding: 3px 15px; border: none; outline: none; border-radius: .2rem;}
+.button {padding: 3px 15px; border: none; outline: none; border-radius: .2rem; background-color: var(--secondary-color-); color: #fff;}
 button {cursor: pointer;}
 
 /* global */
@@ -25,6 +26,10 @@ button {cursor: pointer;}
     text-decoration: none;
     color: #333;
     font-weight: 600;
+}
+
+#navbar .logo {
+    color: var(--secondary-color-);
 }
 
 #navbar .nav {
@@ -69,6 +74,21 @@ button {cursor: pointer;}
 
 #navbar .menu button {
     background-color: #fff;;
+}
+#navbar .trend {
+    cursor: pointer;
+    position: relative;
+}
+#navbar .trend .trend-dropdown {
+    font-weight: 600;
+}
+#navbar .trend .coba {
+    display: none;
+}
+#navbar .trend:hover .dropdown-menu {
+    display: block;
+    width: 20rem;
+    position: absolute;
 }
 /* navbar */
 
@@ -204,7 +224,7 @@ header .populer-item {
     height: 35rem;
     display: flex;
     align-items: center;
-    background-color: #cfcfcf;
+    background-color: var(--secondary-color-);
 }
 
 .populer-tournament .populer-item {
@@ -291,8 +311,13 @@ header .populer-item {
 
 /* latest tournament */
 .latest-tournament {
-    background-color: antiquewhite;
+    background-color: var(--secondary-color-);
     padding-bottom: 3rem;
+    color: #fff;
+}
+
+.latest-tournament a {
+    color: #fff;
 }
 
 .latest-tournament .left, .right {
@@ -305,7 +330,6 @@ header .populer-item {
 }
 
 .latest-tournament .latest-tournament-item{
-    border-bottom: 1px solid red;
     margin: 1rem 0;
 }
 
@@ -347,8 +371,9 @@ header .populer-item {
 
 /* footer */
 footer {
-    background-color: blanchedalmond;
+    background-color: var(--secondary-color-);
     padding: 10rem 0;
+    color: white;
 }
 
 footer a {
@@ -365,7 +390,7 @@ footer .about-title::after, .quick-link-title::after, .scedule-title::after, .ne
     display: block;
     width: 50%;
     height: .2rem;
-    background-color: salmon;
+    background-color: #fff;
 }
 
 footer .about-body,.scedule-body,.newsletter-body {
@@ -384,20 +409,26 @@ footer .link {
 
 footer a{
     margin-right: .5rem;
+    color: #fff;
 }
 
 footer .social-link i {
     font-size: 1.5rem;
-    filter: contrast(0);
+    color: #fff;
 }
 
 footer .newsletter-box {
     overflow: hidden;
-    border-radius: .5rem;
+    border-radius: .1rem;
+}
+
+footer .newsletter-box .newsletter-email {
+    border: .2rem solid #fff;
 }
 
 footer input {
     padding: .5rem;
     width: 100%;
+    background-color: #fff;
 }
 /* footer */

@@ -1,12 +1,11 @@
-html {
-    background-color: #eaeaea;
-}
+
 .comunity-outer {
     margin-top: 7rem;
-    background-color: #eaeaea;
+    background-color: #fff;
 }
 .box-post .card-post {
     background-color: #fff;
+    box-shadow: 0 0 4px #cfcfcf;
 }
 .box-post .info {
     margin-left: .3rem;
@@ -26,7 +25,7 @@ html {
 .box-post .interaction a {
     margin-right: .5rem;
     text-decoration: none;
-    filter: contrast(0);
+    color: #cfcfcf;
 }
 .box-post .interaction i {
     font-size: 1.8rem;
